@@ -1,0 +1,265 @@
+/* style.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set background and font styles for the whole page */
+  body {
+    background-color:rgb(0, 139, 139);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    background-color: rgb(57, 79, 84);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu li a {
+    color: rgb(241, 235, 235);
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .menu li a:hover {
+    background-color: rgb(20, 119, 158);
+  }
+  
+  /* Style the home section */
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .home-content {
+    color: rgb(5, 20, 23);
+  }
+  
+  .text-one {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .text-two {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .text-three {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-four {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .button button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: rgb(37, 39, 57);
+    color: rgb(229, 235, 229);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button button:hover {
+    background-color: rgb(25, 150, 42);
+  }
+  
+  /* Style for the container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style for the row */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Style for the columns */
+  .about-col-1,
+  .about-col-2 {
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* Style for the image */
+  .about-col-1 img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  /* Style for the sub-title */
+  .sub-title {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Style for the paragraphs */
+  .about-col-2 p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Style for the horizontal rule */
+  .about-col-2 hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid rgb(229, 231, 237);
+  }
+  
+  /* Styles for Services section */
+  #services {
+    padding: 50px 0;
+  }
+  
+  .sub-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .services-list > div {
+    flex-basis: 30%;
+    margin-bottom: 40px;
+  }
+  
+  .services-list h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .services-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .services-list li {
+    margin-bottom: 5px;
+  }
+  
+  .services-list a {
+    text-decoration: none;
+    color: rgb(10, 11, 4);
+  }
+  
+  .services-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Additional styles for Achievements & Internships section */
+  .services-list ul li:nth-child(1)::before {
+    content: '\2022'; /* Bullet point */
+    color: rgb(8, 5, 5);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .services-list ul li:nth-child(2)::before {
+    content: '\2022'; /* Bullet point */
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .services-list ul li:nth-child(3)::before {
+    content: '\2022'; /* Bullet point */
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #contact {
+    background-color:rgb(0, 139, 139);
+    padding: 40px;
+  }
+  
+  #contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #contact form {
+    max-width: 400px;
+  }
+  
+  #contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #contact input,
+  #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(160, 29, 29);
+  }
+  
+  #contact input[type="submit"] {
+    background-color: #063b08;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #contact input[type="submit"]:hover {
+    background-color: #1c5f7c;
+  }
+
+.copyright{
+    width:100%;
+    text-align: center;
+    padding:25px 0;
+    background:#262626;
+    font-weight:300;
+    margin-top: 20px;
+}
+.copyright i{
+    color:#ff004f;
+}
+  
+  

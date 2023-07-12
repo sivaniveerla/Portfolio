@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Home Section Start -->
+ <section class="home" id="home">
+  <div class="home-content">
+    <div class="text">
+      <div class="text-one">Hello,</div>
+      <div class="text-two">I'm V.Sree Durga Sivani</div>
+      <div class="text-three">Student at CMRIT</div>
+      <div class="text-four">From Hyderabad</div>
+    </div>
+    <div class="button">
+      <button>Hire Me</button>
+    </div>
+  </div>
+</section>
+  <!-- --------------------about----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic.jpeg">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Hi!! My name is V.Sree Durga Sivani and I'm from Hyderabad.I am currently pursuing my third year Bachelor of Computer Science Engineering(CSE-AI&ML).I am a Full Stack Web Developer.</p><br>
+                    <h2>Education</h2><br>
+                    <p>Bachelor of Technology,CSE(AI&ML)</p>
+                    <P>CMR Institute of Technology | 2020-2024 | CGPA-7.29</P><hr>
+                    <p>Intermediate</p>
+                    <p>Sri Chaitanya Junior College | 2018-2020 | CGPA-8.13</p><hr>
+                    <p>Secondary</p>
+                    <p>Pragathi Vidya Niketan School | CGPA-8.5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Services-------------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <h2>Technical skills</h2>
+          <ul>
+            <li>C</li><br>
+            <li>Python</li><br>
+            <li>SQL</li><br>
+            <li>HTML,CSS</li><br>
+            <li>UI/UX</li><br>
+          </ul>
+        </div>
+      <div>
+      <h2>Certifications</h2>
+      <ul>
+        <li><a href="#">AWS Academy Graduate-AWS Academy Cloud Foundation  </a></li>     
+        <li><a href="#">cisco course completion certificate on Introduction th Cyber Security</a></li>
+        <li><a href="#">Infosys SpringBoard Course completion certificate on basics of pyton</a></li>
+        <li><a href="#">Infosys SpringBoard Course completion certificate on java fundamentals. </a></li>      
+                         
+      </ul><br>
+      
+       
+      </div>
+    <div>
+      <h2>Achievements & Internships</h2>
+   <ul></ul>
+      <li>Edugene internship on python</li><br>
+    </ul>
+     </div>
+
+   </div>
+</div>
+</div>
+
+    </div>
+  </div>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you have any questions or inquiries, feel free to get in touch.</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+  
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <div class="copyright">
+    <footer>
+       <p>Copyright © created by Sivani</p>
+     </footer>
+     </div>
+     </div>
+<script>
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+ 
+</script><script>
+      var sidemenu=document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+          sidemenu.style.right="-200px";
+      }
+  
+  </script>    
+  <script src="https://kit.fontawesome.com/8ceb11f307.js" crossorigin="anonymous"></script> 
+  
+</body>
+</html>
+  
